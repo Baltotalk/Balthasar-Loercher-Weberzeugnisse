@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 h1 {
-    font-size: 50px
+    font-size: 50px;
+}
+
+.nav-div {
+    background-color: grey;
+    border-radius: 6px;
 }
 
 p1 {
-    color: orangered
+    color: orangered;
 }
 
 .Hueberschrift {
@@ -13,21 +19,16 @@ p1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 4vw;
     white-space: nowrap;
+    text-align: center;
+    padding: 30;
 }
 
 .englischteil {
-    font-size: medium
+    font-size: medium;
 }
 
 p1 {
-    font-size: larger
-}
-
-.Hueberschrift {
-    background-color: grey;
-    text-align: center;
-    padding: 30;
-    border-radius: 6px;
+    font-size: larger;
 }
 
 body {
@@ -38,7 +39,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: grey;
     flex-direction: row;
     height: 80;
     position: relative;
