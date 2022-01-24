@@ -87,3 +87,7 @@ button:hover {
 .titelknopf {
     font-size: 12.2pt;
 }
+
+.status {
+    color: green;
+}
