@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 h1 {
     font-size: 50px;
 }
@@ -86,8 +85,18 @@ button:hover {
 
 .titelknopf {
     font-size: 12.2pt;
+    text-decoration: none;
 }
 
 .status {
     color: green;
+}
+
+.linkto-context {
+    text-decoration: none;
+    color: black;
+}
+
+.linkto-index {
+    text-decoration: none;
 }
