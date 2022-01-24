@@ -126,3 +126,7 @@ button:hover {
     color: black;
     background-color: darkgrey;
 }
+
+main {
+    margin-right: 8px;
+}
