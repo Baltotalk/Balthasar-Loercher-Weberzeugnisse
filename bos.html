@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Balthasar Lörcher Weberzeugnisse</title>
+
+
+</head>
+
+<body>
+    
+
+    <main>
+        Herzlich Willkommen auf der Seite des Baltic Operating Systems! Wir arbeiten gerade am Release von B.OS 3.0.<br> Zurück ins <a class="linkto-index" href="index.html">Hauptmenü</a>.
+        <div class="titleimgbos-flexbox">
+            <div class="titleimgbos">
+                <img src="images/B.OS 3.png" width="50%" >
+            </div>
+        </div>
+    
+    <h2>Das ist B.OS</h2>
+    B.OS ist ein kommandozeilenbasiertes Programm. Mit B.Os können Sie nebenbei einfach Ihre Arbeiten verrichten. Mit integriertem Workthrough haben sie ein intuitives, kostenloses Programm für Officearbeiten. 
+    <br>B.OS ist ein kleines, in C# geschriebenes Projekt um zu zeigen, wie einfach es sein kann, ein nütliches Programm zu entwerfen. Die Inspiration für B.OS liegt, wie wohl kaum anders zu erwarten, im legendären MS DOS, das bis Windows XP fester Bestandteil der Computerwelt war.
+    <h2>Download</h2>
+    B.OS 3.0 ist derzeit noch in Entwicklung und steht deshalb nicht zum Download bereit.
+    <br><br><b>Ältere Versionen:</b><br><br>B.OS 2.4 (.jar) Download <br>B.OS 2.1 (.jar) Download (Seit 15.03.2022 nicht mehr geupdatet)<br>B.OS 1.2 (.jar) Download (Seit 01.03.2022 nicht mehr geupdatet)
+    <br>
+    <h2>B.OS 3.0 Hilfezentrum Online</h2>
+    <b>Themenfelder</b>
+    <br>-Einrichtung
+    <br>-Kommunikation
+    <br>-Standarddatenverwaltung
+    <br>-Standardbefehlspräfixe
+    <br>-Standardbefehle 
+    <br><h2>Einrichtung</h2>
+    Wenn Sie B.OS 3.0 starten, so werden sie dazu aufgefordert Ihre Daten anzugeben. Das sind ihr <b>Vorname</b>, Ihr <b>Nachname</b> und ihr <b>Geburtsdatum</b>, bestehend aus Tag, Monat und Jahr.<br>Direkt zu Beginn erhalten Sie die Möglichkeit, die Einrichtung mit dem Befehl <b>-skip</b> zu überspringen. Drücken Sie etwas Anderes, so beginnt die Einrichtung regulär.<br>Geben Sie zuerst ihren <b>Vornamen</b> an. Bitte verwenden Sie am Anfang und Ende des Namens keine Leerzeichen, dies erledigt das Programm automatisch.<br>Geben Sie nachdem Sie Eingabe gedrückt haben nun Ihren <b>Nachnamen</b> an. Es gilt dasselbe wie beim Vornamen.<br>Nun geben Sie ihren <b>Geburtstag</b> an. Schreiben Sie die Zahl immer zweistellig, zum Beispiel <b>01</b>. Setzen Sie keine Punkte, dies erledigt das Programm.<br>Als nächstes geben Sie Ihren <b>Geburtsmonat</b> an. Diesen schreiben Sie einfach aus, zum Beispiel <b>Januar</b>.<br>Beim <b>Jahr</b> gelten sie selben Regeln wie beim Geburtstag.<br>Prüfen Sie nun Ihre Angaben und bestätigen Sie ihre Korrektheit mit <b>Ja</b>. Sollten sie fehlerhaft sein, schreiben Sie <b>Nein</b>. In diesem Fall startet der Prozess erneut. Hilfe können Sie mit <b>-hlp</b> überall im System oder auch online (also hier) erhalten.<br><b>Hinweis:</b>Überspringen Sie die Einrichtung, so werden Sie automatisch <b>User</b> genannt.
+    <h2>Kommunikation</h2>
+    Um das Programm zu bedienen, müssen Sie mit ihm kommunizieren. Dafür müssen Sie dem Programm in Textform sagen, was es tun soll. Die Regeln dafür sind einfach:<br>Es gibt einige vordefinierte <b>Befehle</b>, die Sie nutzen können und müssen um dem Programm Aufgaben zu geben. Vor jedem Befehl <b>müssen</b> Sie den Befehlspräfix "-" verwenden. Tun Sie dies nicht, erscheint eine Fehlermeldung. Schreiben Sie hingegen nur "-", so hat das Programm nur den Präfix aber keinen Befehl, weshalb es Ihnen sagen wird, dass der Präfix alleine nicht zugeordnet werden kann.<br>Bei <b>Werteeingaben</b> müssen Sie beachten, dass Sie <b>erst</b> den Befehl, zum Beispiel -save, eingeben müssen, und dann die Eingabetaste betätigen. Erst dann weren Sie dazu aufgefordert, den entsprechenden Wert einzugeben, den Sie speichern wollen.
+    <h2>Standarddatenverwaltung</h2>
+    Um Daten zu verwalten, bietet Ihnen B.OS 3.0 mehrere Möglichkeiten. Für einfache Wertespeicherungen (ein Wert ist hierbei ein Text, eine Zahl oder Zeichen, aber <b>KEINE</b> Datei) stehen Ihnen zwei Speicherplätze zur Verfügung. Auf diese greifen Sie zu, indem Sie die Nummer des Speicherplatzes direkt nach dem Befehl als Zahl eingeben, zum Beispiel -ins2. Handelt es sich um den ersten Speicherplatz, so wird KEINE Zahl eingegeben.<br>Um Daten zu löschen können Sie den Befehl -del[Speicherplatz] verwenden. Werte in Dateiform können nicht gelöscht, sondern nur überschrieben werden.<br>Um Werte abzuspeichern verwenden Sie den Befehl <b>-save[Speicherplatz]+[Eingabetaste]+[Wert]</b>.<br>Mit -saveindat+[Eingabetaste]+[Wert] speichern Sie Werte direkt in Dateiform, ohne dafür einen Speicherplatz zu belegen. Mit -ins[Speicherplatz]indat+[Eingabetaste] speichern Sie gespeicherte Werte in Dateiform ab. Mit -ins[Speicherplatz] zeigen Sie gespeicherte Werte an. Dateiwerte können in B.OS 3.0.0 noch nicht angezeigt werden.
+    <h2>Standardbefehlspräfixe</h2>
+    Der Standardbefehlspräfix ist <b>"-"</b>. Sie verwenden ihn bei jedem regulären Befehl. Es gibt auch den Befehlspräfix <b>"/"</b>, dieser allerdings wird nur für Entwicklerbefehle verwendet.
+    <h2>Standardbefehle</h2>
+    B.OS 3.0 verfügt über eine Befehlsliste, die mit -list aufgerufen werden kann. Auf ihr sind alle Standardbefehle, nicht jedoch Entwicklerbefehle und der Befehl -linusisthebest verzeichnet, die seit B.OS 2.1 unter -devlist anzeigbar sind. 
+
+    
+    </main>
+    
+    
+
+
+
+</body>
+
+
+
+
+</html>
