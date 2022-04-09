@@ -45,6 +45,21 @@ body {
     border-radius: 6px;
 }
 
+.websiteende {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50;
+    position: relative;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
+.end-div{
+    background-color: grey;
+}
+
 button {
     background: none;
     border: none;
@@ -134,8 +149,8 @@ button:hover {
 
 .context {
     text-decoration: none;
-    color: black;
-    background-color: darkgrey;
+    color: blue;
+    
 }
 
 main {
