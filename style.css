@@ -51,7 +51,7 @@ body {
     align-items: center;
     flex-direction: row;
     height: 50;
-    position: relative;
+    position: static;
     bottom: 10px;
     border-radius: 10px;
 }
