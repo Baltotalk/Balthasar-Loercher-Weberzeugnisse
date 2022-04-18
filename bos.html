@@ -32,7 +32,7 @@
     B.OS ist ein kommandozeilenbasiertes Programm. Mit B.OS können Sie nebenbei einfach Ihre Arbeiten verrichten. Mit integriertem Workthrough haben Sie ein intuitives, kostenloses Programm für Officearbeiten. 
     <br>B.OS ist ein kleines, in C# geschriebenes Projekt um zu zeigen, wie einfach es sein kann, ein nützliches Programm zu entwerfen. Die Inspiration für B.OS liegt, wie wohl kaum anders zu erwarten, im legendären MS DOS, das bis Windows XP fester Bestandteil der Computerwelt war.
     <h2>Download</h2>
-    <b>B.OS 3.0 (.zip) Download</b>
+    <b>B.OS 3.0 (.zip) Downloa<d/b>
     <br>
     <b>B.OS Lite 2022/04 (.zip) <a href="images/B.OS Lite 2022.zip">Download</a></b>
     <br>
@@ -46,19 +46,31 @@
     <br>-Standarddatenverwaltung
     <br>-Standardbefehlspräfixe
     <br>-Standardbefehle 
+    <br>-Multimedia
+    <br>-Workthrough
+    <br>-Derzeitige Version
     <br><h2>Einrichtung</h2>
     Wenn Sie B.OS 3.0 starten, so werden Sie dazu aufgefordert Ihre Daten anzugeben. Das sind Ihr <b>Vorname</b>, Ihr <b>Nachname</b> und Ihr <b>Geburtsdatum</b>, bestehend aus Tag, Monat und Jahr.<br>Direkt zu Beginn erhalten Sie die Möglichkeit, die Einrichtung mit dem Befehl <b>-skip</b> zu überspringen. Drücken Sie etwas Anderes, so beginnt die Einrichtung regulär.<br>Geben Sie zuerst Ihren <b>Vornamen</b> an. Bitte verwenden Sie am Anfang und Ende des Namens keine Leerzeichen, dies erledigt das Programm automatisch.<br>Geben Sie nachdem Sie Eingabe gedrückt haben nun Ihren <b>Nachnamen</b> an. Es gilt dasselbe wie beim Vornamen.<br>Nun geben Sie Ihren <b>Geburtstag</b> an. Schreiben Sie die Zahl immer zweistellig, zum Beispiel <b>01</b>. Setzen Sie keine Punkte, dies erledigt das Programm.<br>Als nächstes geben Sie Ihren <b>Geburtsmonat</b> an. Diesen schreiben Sie einfach aus, zum Beispiel <b>Januar</b>.<br>Beim <b>Jahr</b> gelten dieselben Regeln wie beim Geburtstag.<br>Prüfen Sie nun Ihre Angaben und bestätigen Sie ihre Korrektheit mit <b>Ja</b>. Sollten sie fehlerhaft sein, schreiben Sie <b>Nein</b>. In diesem Fall startet der Prozess erneut. Hilfe können Sie mit <b>-hlp</b> überall im System oder auch online (also hier) erhalten.<br><b>Hinweis:</b>Überspringen Sie die Einrichtung, so werden Sie automatisch <b>User</b> genannt.
     <h2>Kommunikation</h2>
     Um das Programm zu bedienen, müssen Sie mit ihm kommunizieren. Dafür müssen Sie dem Programm in Textform sagen, was es tun soll. Die Regeln dafür sind einfach:<br>Es gibt einige vordefinierte <b>Befehle</b>, die Sie nutzen können und müssen um dem Programm Aufgaben zu geben. Vor jedem Befehl <b>müssen</b> Sie den Befehlspräfix "-" verwenden. Tun Sie dies nicht, erscheint eine Fehlermeldung. Schreiben Sie hingegen nur "-", so hat das Programm nur den Präfix aber keinen Befehl, weshalb es Ihnen sagen wird, dass der Präfix alleine nicht zugeordnet werden kann.<br>Bei <b>Werteeingaben</b> müssen Sie beachten, dass Sie <b>erst</b> den Befehl, zum Beispiel -save, eingeben müssen, und dann die Eingabetaste betätigen. Erst dann werden Sie dazu aufgefordert, den entsprechenden Wert einzugeben, den Sie speichern wollen.
     <h2>Standarddatenverwaltung</h2>
-    Um Daten zu verwalten, bietet Ihnen B.OS 3.0 mehrere Möglichkeiten. Für einfache Wertespeicherungen (ein Wert ist hierbei ein Text, eine Zahl oder Zeichen, aber <b>KEINE</b> Datei) stehen Ihnen zwei Speicherplätze zur Verfügung. Auf diese greifen Sie zu, indem Sie die Nummer des Speicherplatzes direkt nach dem Befehl als Zahl eingeben, zum Beispiel -ins2. Handelt es sich um den ersten Speicherplatz, so wird KEINE Zahl eingegeben.<br>Um Daten zu löschen können Sie den Befehl -del[Speicherplatz] verwenden. Werte in Dateiform können nicht gelöscht, sondern nur überschrieben werden.<br>Um Werte abzuspeichern verwenden Sie den Befehl <b>-save[Speicherplatz]+[Eingabetaste]+[Wert]</b>.<br>Mit -saveindat+[Eingabetaste]+[Wert] speichern Sie Werte direkt in Dateiform, ohne dafür einen Speicherplatz zu belegen. Mit -ins[Speicherplatz]indat+[Eingabetaste] speichern Sie gespeicherte Werte in Dateiform ab. Mit -ins[Speicherplatz] zeigen Sie gespeicherte Werte an. Dateiwerte können in B.OS 3.0.0 noch nicht angezeigt werden.
+    Um Daten zu verwalten, bietet Ihnen B.OS 3.0 mehrere Möglichkeiten. Für einfache Wertespeicherungen (ein Wert ist hierbei ein Text, eine Zahl oder Zeichen, aber <b>KEINE</b> Datei) stehen Ihnen zwei Speicherplätze zur Verfügung. Auf diese greifen Sie zu, indem Sie die Nummer des Speicherplatzes direkt nach dem Befehl als Zahl eingeben, zum Beispiel -ins2. Handelt es sich um den ersten Speicherplatz, so wird KEINE Zahl eingegeben.<br>Um Daten zu löschen können Sie den Befehl -del[Speicherplatz] verwenden. Werte in Dateiform können nicht gelöscht, sondern nur überschrieben werden.<br>Um Werte abzuspeichern verwenden Sie den Befehl <b>-save[Speicherplatz]+[Eingabetaste]+[Wert]</b>.<br>Mit -saveindat+[Eingabetaste]+[Wert] speichern Sie Werte direkt in Dateiform, ohne dafür einen Speicherplatz zu belegen. Mit -ins[Speicherplatz]indat+[Eingabetaste] speichern Sie intern gespeicherte Werte extern in Dateiform ab. Mit -ins[Speicherplatz] zeigen Sie gespeicherte Werte an. <br>Extern, also im Wertespeicher.txt gespeicherte Dateien, rufen sie jederzeit mit <b>-readdat</b> auf. Dort gespeicherte Werte bleiben auch nach einem Shutdown erhalten und können jederzeit ausgelesen werden. Der Wertespeicher ist aufwärtskompatibel und wird später auch von neuren Systemen ausgelesen werden können. .
     <h2>Standardbefehlspräfixe</h2>
     Der Standardbefehlspräfix ist <b>"-"</b>. Sie verwenden ihn bei jedem regulären Befehl. Es gibt auch den Befehlspräfix <b>"/"</b>, dieser allerdings wird nur für Entwicklerbefehle verwendet.
     <h2>Standardbefehle</h2>
     B.OS 3.0 verfügt über eine Befehlsliste, die mit -list aufgerufen werden kann. Auf ihr sind alle Standardbefehle, nicht jedoch Entwicklerbefehle und der Befehl -linusisthebest verzeichnet, die seit B.OS 2.1 unter -devlist anzeigbar sind. 
+    <h2><b>Multimedia</b></h2>
+    B.OS 3.0 verfügt nicht nur über allgemeine Systemsounds, die zum Beispiel bei einem Error oder dem Starten des internen Hilfszentrums ertönen, sondern auch über Standardmusik, zum Beispiel "Jazz", spielbar mit <b>-plyjazz</b>. Es ist derzeit (pre-release 1.1) leider nicht möglich eigene Musik abzuspielen, da dafür ein spezielles Audioformat benötigt wird. 
     <h2><b>Workthrough</b></h2>
     Workthrough ist derzeit noch nicht verfügbar. Wir arbeiten daran, ihnen bereits mit B.OS 3.1 Workthrough zur Verfügung zu stellen.
-    
+    <h2><b>Derzeitige Version</b></h2>
+    Die derzeitige Version von B.OS 3.0 ist die pre-release Version 1.1. Multimedia, einfachere Bedienung, deutlich einfachere Einrichtung und ein sehr einfach strukturiertes Dateisystem sind in dieser Version der Fokus. Außerdem wurden Kompatibilitätsprobleme mit Windows behoben. 
+    <h2>B.OS Lite 2022</h2>
+    B.OS Lite 2022 ist prinzipiell kein B.OS und eher als Techdemo zu verstehen. Sämtliche grundlegende Funktionen der normalen B.OS Teile fehlen, auch ist die Dateistrukturierung komplex. B.OS 1.2 bietet mehr Funktionen als B.OS Lite 2022, weshalb im Zweifelsfall auf B.OS 1.2 zurückzugreifen ist.
+    <h2>B.OS 1.2</h2>
+    Stand: März 2021, Informationen sind eventuell nicht mehr aktuell.
+    <br>
+    B.OS 1.2 ist das neue B.OS! Ein nützliches, kleines Javaprogramm für zwischendurch, das viele Entwicklermöglickeiten aufzuweisen hat und intuitiv mit dem Nutzer interagiert. Die deutlich höhere Befehlsvielfalt als bei B.OS 1.1, nämlich über 10 Befehle, zeigt sich in den Möglichkeiten die das Programm mit sich bringt. Im Gegensatz zum Vorgänger versucht B.OS 1.2 deutlich mehr auf den User einzugehen. Neu ist unter anderem die Funltion, Dateien in einem Speicherplatz abzuspeichern und wiederzugeben, außerdem können Sie eine externe Textdatei erstellen, diese allerdings nicht auslesen. Geplant war, mit dem Befehl -help oder -hlp eine Hilfe für Nutzer zur VErfügung zu stellen, leider wird dies aber erst zu einem säteren Zeitpunkt möglich sein. Downloaden Sie sich jetzt B.OS 1.2, das neueste von B.OS!
     </main>
     
     
