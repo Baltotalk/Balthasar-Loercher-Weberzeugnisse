@@ -120,11 +120,12 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
+    position:fixed;
     margin-top: 1%;
     border-radius: 6px;
     width: 100%;
-    height: 2 0%;
+    height: 20%;
+    align-self: middle;
 }
 
 .titleimgbos-flexbox {
@@ -135,6 +136,7 @@ button:hover {
     border-radius: 6px;
     width: 100%;
     height: 2 0%;
+    align-self: middle;
 }
 
 
@@ -145,6 +147,7 @@ button:hover {
     max-height: 422px;
     border: darkgray groove;
     border-radius: 3px;
+    align-self: middle;
 }
 
 .context {
