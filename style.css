@@ -163,3 +163,11 @@ main {
 maintextbos{
     color: black;
 }
+
+.backgroundbos { 
+    background-image: linear-gradient(90deg, rgb(106, 98, 133) 66.0%, rgb(70, 52, 70) 50.0%);
+    background-size: 100%; 
+    mix-blend-mode: color-dodge; color: white;
+    
+ }
+
