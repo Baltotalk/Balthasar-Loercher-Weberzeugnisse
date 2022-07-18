@@ -185,7 +185,7 @@ maintextbos{
     width: 80%;
     height: 40%;
 
-    background-image: repeating-radial-gradient(circle at center, rgb(53, 137, 148) 20px, rgb(71, 96, 97) 40px, powderblue 50px);
+    background-image: repeating-radial-gradient(circle at center, rgb(53, 137, 148) 20px, rgb(141, 202, 204) 40px, rgb(49, 118, 128) 50px);
 
     color: rgb(0, 0, 0);
     font-size: larger;
