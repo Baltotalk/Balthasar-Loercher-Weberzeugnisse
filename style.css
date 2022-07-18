@@ -124,7 +124,7 @@ button:hover {
     margin-top: 1%;
     border-radius: 6px;
     width: 100%;
-    height: 20%;
+    height: auto;
     
 }
 
@@ -141,7 +141,7 @@ button:hover {
 
 
 .titleimg {
-    width: auto;
+    width: 100%;
     height: auto;
     max-width: 1500px;
     max-height: 422px;
@@ -165,26 +165,8 @@ maintextbos{
 }
 
 .backgroundbos { 
-    position:relative;
+    background-image: linear-gradient(90deg, rgb(106, 98, 133) 66.0%, rgb(70, 52, 70) 34.0%);
+    size: 100%;
     
  }
 
- .backgroundbos::before,
- .backgroundbos::after{
-    padding: 10px 0;
-    text-indent: 10px;
-    position: absolute;
-    white-space: nowrap;
-    overflow: hidden;
-    content: attr(data-content);
- }
-.backgroundbos::before{
-    background-color: rgb(106, 98, 133);
-    color: black;
-    width: 100%;
-}
-.backgroundbos::after{
-    background-color: rgb(70, 52, 70);
-    color: white;
-    width: 20%;
-}
