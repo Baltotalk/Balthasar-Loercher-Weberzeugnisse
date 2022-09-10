@@ -349,10 +349,10 @@ form {
   }
   
   /* Set a style for all buttons */
-  button {
+  loginbutton {
     background-color: #04AA6D;
     color: white;
-    padding: 14px 20px;
+    padding: 1px 100px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -360,8 +360,8 @@ form {
   }
   
   /* Add a hover effect for buttons */
-  button:hover {
-    opacity: 0.8;
+  loginbutton:hover {
+    color:darkgreen;
   }
   
   /* Extra style for the cancel button (red) */
