@@ -206,25 +206,13 @@ maintextbos{
  }
 
  .designnews {
-    background-image: linear-gradient(90deg, rgb(13, 2, 49) 50.0%, rgb(26, 83, 21) 50.0%);
+    display:flex;
+    background-image: linear-gradient(90deg, rgb(70, 52, 70) 60.0%,  rgb(106, 98, 133) 40.0%);
     size: 100%;
     color: white;
  }
 
- .designnews-flexbox {
-    display: flex;
-    
-    position: relative;
-    margin-top: 1%;
-    border-radius: 6px;
-    width: 80%;
-    height: 40%;
-
-    background-image: repeating-radial-gradient(circle at center, rgb(53, 137, 148) 20px, rgb(141, 202, 204) 40px, rgb(49, 118, 128) 50px);
-
-    color: rgb(0, 0, 0);
-    font-size: larger;
-}
+ 
 
 .anime { animation: turner 10s infinite linear }
 
