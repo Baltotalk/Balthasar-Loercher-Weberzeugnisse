@@ -44,7 +44,7 @@
 	top: calc(50% - 1px);
 	left: 30%;
 	width: 40%;
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid white;
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu-btn:before{
@@ -510,3 +510,76 @@ body {
   background-image: linear-gradient(90deg, rgb(106, 98, 133) 66.0%, rgb(70, 52, 70) 34.0%);
   size: 100%;
 }
+
+.backgrounddivers {
+  background-color: #000;
+  color: white;
+}
+
+/*--------------------------------------------------------------*/
+
+.download {
+  border-color: white;
+  color: white
+}
+
+.download:hover {
+  background: white;
+  color: black;
+}
+
+.btn {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 7px 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+hr{
+
+  border: 0;
+  
+  height: 5px;
+  
+  background-image: linear-gradient(to right, black,white,black);
+  
+  }
+
+/*-------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
