@@ -35,7 +35,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "<b>Der Countdown zu Timelapse 3.0 startet schon bald!</b>";
+    document.getElementById("demo").innerHTML = "<b>Der Countdown zu Timelapse 3.0 startet demnächst!</b>";
   }
 }, 1000);
   
