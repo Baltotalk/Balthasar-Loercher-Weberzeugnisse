@@ -579,6 +579,6 @@ p { color: var(--text-secondary); margin-bottom: 20px; max-width: 600px; }
 
 /* Hover-Bild für NadGa */
 .card-nadga::before {
-    background-image: url('images/nadga_bg.jpg'); /* Ein Screenshot der Konsole oder Artwork */
+    background-image: url('images/Nadga_full.png'); /* Ein Screenshot der Konsole oder Artwork */
     opacity: 0.25;
 }
