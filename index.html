@@ -1,200 +1,111 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="de">
 <head>
-    <meta charset="utf-8">
-    <meta name=“viewport“ content=“width=device-width, initial-scale=1.0, user-scalable=no, height=device-height″>
-    <link rel="stylesheet" href="style.scss">
-    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <link rel="manifest" href="icon/site.webmanifest">
-    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Balthasar Lörcher Weberzeugnisse</title>
-
-    
-
+    <! Globale festlegungen>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balthasar Lörcher Weberzeugnisse | Startseite</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+    <! Hueberschrift und Weiterleitung>
+    <header class="blwe-header">
+        <h1>BALTHASAR LÖRCHER WEBERZEUGNISSE</h1>
+        <nav class="blwe-nav">
+            <ul>
+                <li><a href="index.html" class="active">Startseite</a></li>
+                <li><a href="musik.html">Musik</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="voltago.html">VoltaGo</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-container">
+	
+		<!-- Stationärer Begrüßungstext -->
+	<div class="blwe-welcome-sticky-wrapper">
+    		<section class="blwe-welcome-area">
+        		<div class="welcome-badge" id="current-date">Januar 2026</div>
+        			<h2>Willkommen!</h2>
+        			<p class="welcome-subtext">
+            				Hallo, Ich freue mich Sie auf meiner Webseite begrüßen zu dürfen! Ihnen wird das neue Design dieser Seite nicht entgangen sein, simpel und aufgeräumt aber völlig funktional. Nachfolgend finden Sie eine Übersicht der Projekte auf dieser Seite und die aktuellen Neuigkeiten.
+        			</p>
+    		</section>
+	</div>
+
+		<!-- Hier beginnen die Container, die drüberscrollen -->
+	<div class="blwe-scroll-content">
+    		<!Voltago Box>
+        		<section class="hero-card card-voltago">
+            			<div class="content-wrapper">
+                			<h2>VoltaGo 3</h2>
+                			<p>Funktioniert einfach. Nimmt Ihnen die Arbeit ab, effiziente PV Modulbelegung von Dächern zu berechnen.</p>
+                			<a href="voltago.html" class="btn-primary">Zu VoltaGo</a>
+            			</div>
+        		</section>
+
+        		<!Andere Seiten und Neuerungen>
+        	<section class="grid-layout">
+            
+            		<div class="card card-musik">
+                		<div class="content-wrapper">
+                    			<h3>Musik</h3>
+                    			<p>Freie Musikproduktionen zum Konzentrieren oder Genießen.</p>
+                		</div>
+            		</div>
+
+            		<div class="card card-prog">
+                		<div class="content-wrapper">
+                    			<h3>Programme</h3>
+                    			<p>Neue und alte Projekte von BLWE an einem Ort vereint.</p>
+                		</div>
+            		</div>
+
+        	</section>
+			<!-- News-Widget Sektion -->
+		<section class="blwe-news-container">
+    			<div class="news-widget">
+        			<span class="news-tag">VoltaGo</span>
+        			<div class="news-content">
+            				<h4>VoltaGo 3</h4>
+            				<p>VoltaGo 3 ist fertig und steht in wenigen Tagen hier zum Download bereit!</p>
+        			</div>
+    			</div>
+
+    			<div class="news-widget">
+        			<span class="news-tag">NadGa</span>
+        			<div class="news-content">
+            				<h4>Release</h4>
+            				<p>Die erste Demo von NadGa wird kurz nach VoltaGo 3 hier released!</p>
+        			</div>
+    			</div>
+			<div class="news-widget">
+        			<span class="news-tag">Radiobau</span>
+        			<div class="news-content">
+            				<h4>Baltronik M1</h4>
+            				<p>In freien Minuten arbeite ich an dem Bau eines Radios mit Einfachtransistor und einfachem Resonanzschwinkreis. Gelegentlich wird es in dieser Kachel Updates darüber geben.</p>
+        			</div>
+    			</div>
+		</section>
 
 
+        		<! Hinweise>
+        	<section class="info-section">
+            		<p>Alle Inhalte dieser Seite sind aus einer Hand. Von Coding bis Hosting.</p>
+        	</section>
+	</div>
+    </main>
 
 
-<body class="backgroundbos">
-      <center>
-        <font size="5">
-  
-    <div class="titelblock">
-    <h1 class="Hueberschrift">BALTHASAR LÖRCHER WEBERZEUGNISSE</h1>
-
-    
-    <nav>
+	<footer class="blwe-footer">
+        	<p>&copy; 2026 Balthasar Lörcher. Alle Rechte vorbehalten.</p>
+		<p>Mehr Informationen im Impressum. 
+    	</footer>
         
-        <a href="index.html">Startseite</a>
-        <a href="projekte.html">Programme</a>
-        <a href="diverses.html">Musik & Co</a>
-        <a href="impressum.html">Impressum</a>
-        <a href="voltago.html">VoltaGo</a>
-        <div class="animation start-home"></div>
-      </nav>
-    
-    </div>
+        
 
-<img src="images/Nadga_full.png">  
-
-    
-<h2>Herzlich Willkommen</h2>
-Herzlich Willkommenauf bl-weberzeugnisse.de! Diese Seite kann Nutzungstechnische Ungleichheiten aufweisen,<br>da der Fokus vollständig auf VoltaGo umgelenkt wird. Bitte haben Sie dabei etwas Geduld.<br>
-Auf dieser Webseite sind alle Projekte und Inhalte zusammengefasst, an denen B.Lörcher arbeitet.
-
-Warnung: Diese Webpräsenz kann auf Mobilgeräten fehlerhafte Formatierungen anzeigen. Mehrere Subseiten sind in Bearbeitung.<br>Des Weiteren sind aktuell zwei Spiele in Entwicklung, unter den Themen ZOMB und NadGa abrufbar!<br>Bald mehr Informationen zu VoltaGo.
-<br>
-<h3>Neuigkeiten:</h3>
-
-
-<div class="card">
-    <div class="card__header">
-      <img src="images/voltago.png" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-red">VoltaGo</span>
-      <h4>VoltaGo 3</h4>
-      <p>VoltaGo 3, ein Programm zur Berechnung kaufmännischer und technischer Aufgaben, ist da!<br>Der Nachfolger vom B.OS vereint bekannte Systemstruktur mit besserer Bedienbarkeit und zahlreichen Funktionen!<br>Mehr auf der Hauptseite zu VoltaGo!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <div class="user__info">
-          <small>26.01.2026</small>
-        </div>
-      </div>
-    </div>
-  </div>
-<div class="container">
-  <div class="card">
-    <div class="card__header">
-      <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-blue">Musik</span>
-      <h4>Timelapse</h4>
-      <p>Mit sehr mehrmaliger Verschiebung wird schon in Bälde endlich Timelapse 3.0 erscheinen! Erfahren sie <a href="diverses.html">hier</a> alles zu BCL's letztem Album!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <div class="user__info">
-          <small>13.11.25 Original vom 23.02.22</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card__header">
-      <img src="images/Nadga_compact.png" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-brown">NadGa</span>
-      <h4>New Adventure Game</h4>
-      <p>Bleiben Sie über <a href="nadga.html">diesen Link</a> oder das GitHub Repository über NadGa auf dem Laufenden!. Schauen Sie gerne auf der NadGa Unterseite vorbei, weitere Details wurden hinzugefügt!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <div class="user__info">
-          <small>25.08.25</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card__header">
-      <img src="images/Eintransistor_Schaltplan.png" alt="card__image" class="card__image" width="600">
-    </div>
-    <div class="card__body">
-      <span class="tag tag-red">Baltronik M1</span>
-      <h4>Baltronik M1</h4>
-      <p>Ein weiteres neues Nebenprojekt steht in den Startlöchern!<br>Ein Eintransistor UKW Radioempfänger mit einfachem Resonanzschwingkreis.<br>Details folgen!</p>
-    </div>
-    <div class="card__footer">
-      <div class="user">
-        <div class="user__info">
-          <small>05.12.25 Original vom 14.11.25</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</font>
-    </center>
-  </body>
-  
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-

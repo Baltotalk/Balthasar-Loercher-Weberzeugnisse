@@ -1,48 +1,141 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name=“viewport“ content=“width=device-width, initial-scale=1.0, user-scalable=no, height=device-height″>
-    <link rel="stylesheet" href="style.scss">
-    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <link rel="manifest" href="icon/site.webmanifest">
-    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Balthasar Lörcher Weberzeugnisse</title>
-  </head>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balthasar Lörcher Weberzeugnisse | VoltaGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="blwe-header">
+        <h1>Balthasar Lörcher VoltaGo</h1>
+        <nav class="blwe-nav">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="musik.html">Musik</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="voltago.html" class="active">VoltaGo</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
 
-
-
-  <body class="backgroundbos">
-        <font size="5">
-  
-    <div class="titelblock">
-      <h1 class="Hueberschrift">BALTHASAR LÖRCHER VOLTAGO 3</h1>
-
-    
-      <nav>
+    <main class="content-container">
         
-        <a href="index.html">Startseite</a>
-        <a href="projekte.html">Programme</a>
-        <a href="diverses.html">Musik & Co</a>
-        <a href="impressum.html">Impressum</a>
-        <a href="voltago.html">VoltaGo</a>
-        <div class="animation start-home"></div>
-      </nav>
-    
-    </div>
-  Dies ist die Startseite von VoltaGo!<br>
-  Die aktuelle Version von VoltaGo ist Version 3.0. Demnächst wird hier die Version 3.1 für registrierte Nutzer zum Download bereitgestellt.<br>
-  Bis dahin muss noch einiges vorbereitet werden, VoltaGo ist bereits bereit, jedoch muss diese Webseite noch darauf eingerichtert werden, was durch zwei laufende Projekte aktuell verzögert wird.<br>
-  Das gesamte Projekt ist aktuell noch in Vorbereitung, es wird parallel an dem Programm und an den neuen Funktionen auf dieser HTML Seite gearbeitet.<br>
-  In wenigen Wochen werden Sie hier den Downloadmanager und alle Informationen zu VoltaGo finden! Aktuell befindet sich dieses Projekt in einer frühen Phase der Entwicklung<br>
-  Hyperlink zurück zur <a href="index.html">Startseite</a>.
-  </body>
+        <!-- Haupt-Release -->
+        <section class="hero-card blwe-hero-glow">
+            <div class="content-wrapper">
+                <div class="project-badge">Aktuelles Release</div>
+                <h2>VoltaGo Version 3</h2>
+                <p>Intelligente Features und Konsolennavigation. Diverse Anpassungsmöglichkeiten auf Ihre Nutzungsvorlieben zugeschnitten.</p>
+                
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <a href="updates/XY.exe" class="btn-primary">Bald verfügbar!</a>
+                    <button class="btn-secondary-white" onclick="toggleDetails('main-info')">Mehr erfahren</button>
+                </div>
+
+                <div id="main-info" class="info-panel">
+                    <strong>Release-Notes Version 3:</strong><br>
+                    • Automatisierte Berechnung effizienter Plattenausrichtungen<br>
+                    • Automatischer Update-Check via dieser Seite<br>
+                    • Optimierte Navigation<br>
+		    • Stellen Sie selbst ein welche Ergebnisse VoltaGo Ihnen anzeigt.<br>
+                    • Speichern Sie Ihre Ergebnisse in drei Speicherplätzen ab.<br>
+                    • Legacybootmode für Weiternutzung nach Einstellung des Supports.<br>
+		      Mehr erfahren Sie in den GitHub Release Notes
+                </div>
+            </div>
+        </section>
+	<!-- Sektion: Was ist VoltaGo? -->
+	<section class="blwe-welcome-area" style="margin-top: 60px; position: relative; z-index: 2;">
+    		<div class="welcome-badge">Über das Projekt</div>
+    			<h2>Was ist VoltaGo?</h2>
+    			<p class="welcome-subtext">
+        VoltaGo ist ein kommandozeilenbasiertes Python Programm welches Ihnen als professioneller Anwender dabei hilft, verschiedene Berechnungen Ihres Arbeitsalltages zuverlässig zu übernehmen. Mit VoltaGo 3 können Sie die Beladung von Lastkraftwagen und die ideale Belegung eines Daches jeder Größe mit Photovoltaikmodulen berechnen. Der Fokus liegt hierbei auf dem PV Programm, an welchem stetig weiterentwickelt wird. VoltaGo ist selbst als Konsolenprogramm einfach und unmissverständlich zu bedienen, es sagt Ihnen immer in verständlicher Sprache welche Informationen es gerade von Ihnen braucht und wie Sie so antworten können, dass VoltaGo Sie versteht.
+    			</p>
+	</section>
+
+	<!-- Sektion: Dokumentation & Hilfe -->
+	<section class="blwe-section-label">Support & Anleitung</section>
+
+		<details class="blwe-details manual">
+    			<summary>Bedienungsanleitung</summary>
+    				<div class="details-content">
+        				<p><strong>Erste Schritte:</strong> Starten Sie die <code>VoltaGo.exe</code>. Beim ersten Start werden Sie aufgefordert, die Lizenzvereinbarung zu akzeptieren und bekommen die Updateinformationen Ihrer Version angezeigt. Sie landen nun in der Haupteingabeshell von VoltaGo. Wo Sie sich im System befinden, sprich welche spezifischen Befehle erkannt werden können, können Sie unten links sehen. In der Hauptshell können Sie mit -list die Befehlsliste abrufen. Geben Sie einfach einen Befehl ein und drücken Sie die ENTER Taste, VoltaGo sagt Ihnen dann was es tun wird.</p>
+        				<p><strong>Update-Prozess:</strong> Um die neueste Version zu erhalten, nutzen Sie in der App den Befehl <code>-update</code>. VoltaGo verbindet sich mit den BLWE Servern und informiert Sie wenn eine neue Version verfügbar ist, die Sie hier laden können.</p>
+    				</div>
+		</details>
+
+		<details class="blwe-details troubleshooting">
+    			<summary>Troubleshooting / Fehlerbehebung</summary>
+    				<div class="details-content">
+        				<p><strong>Problem: Programm startet nicht.</strong><br>Stellen Sie sicher, dass die VoltaGo.exe Datei sich im Verzeichnis mit allen benötigten Zusatzdateien (.txt Dateien) befindet. Ohne diese kann VoltaGo nicht starten.</p>
+        				<p><strong>Problem: Es wird eine Fehlermeldung bezüglich meiner Internetverbindung angezeigt.</strong><br>Prüfen Sie Ihre Internetverbindung. VoltaGo prüft bei jedem Start und wenn Sie den Updatebefehl ausführen ob eine neue Version verfügbar ist und benötigt dafür eine Verbindung zum Internet. Sind die BLWE Server nicht erreichbar, gibt VoltaGo eine Fehlermeldung aus. Sie können das Programm jedoch ohne Einschränkungen verwenden, haben möglicherweise aber nicht die neuesten Funktionen.</p>
+					<p><strong>Problem: Programm stürzt ab.</strong><br>Sollte das Programm in einem Unterprogramm wie dem PV-Programm abstürzen, haben Sie wahrscheinlich bei der Abfrage nach einer Zahl eine Zahl im falschen Format oder keine gültige Eingabe getätigt. Das Programm kann dies aktuell nicht verarbeiten. Sollte das Programm abgestürzt sein wenn dies nicht der Fall ist kontaktieren Sie bitte den Entwickler und geben Sie einen eventuell angezeigten Fehlercode an. Dies sollte nicht passieren.</p>
+				<p><strong>Problem: Programm startet im Legacybootmodus</strong><br>Überprüfen Sie die Einstellung Ihres Systemdatums. Wenn VoltaGo ein Datum zu weit in der Zukunft erkennt sperrt es aus Sicherheitsgründen den Zugang zum Programm. Sollte Ihre Version jedoch älter als ein halbes Jahr sein, so benötigen Sie einen Legacybootcode zum Start des Programms. Diesen bekommen Sie auf dieser Seite. Jedoch sollten Sie ein Update des Programms strengstens in Betrachtung ziehen da der Zugang aufgrund eventuell mittlerweile behobener schwerwiegender Bugs eingeschränkt wurde.</p>
+    				</div>
+		</details>
+
+
+        <!-- Archiv -->
+        <section class="blwe-section-label">Versions-Archiv</section>
+        <details class="blwe-archive-details" open>
+            <summary>Alle Releases</summary>
+            <div class="archive-list">
+                
+                <!-- Beispiel: Alte Version -->
+                <div class="archive-wrapper">
+                    <div class="archive-item">
+                        <div>
+                            <span class="archive-version">Version 2.3.3</span>
+                            <span class="archive-date">Dez. 2025</span>
+                        </div>
+                        <div>
+                            <button class="btn-info-small" onclick="toggleDetails('v35-info')">Details</button>
+                            <a href="updates/XY.zip" class="dl-icon">Download</a>
+                        </div>
+                    </div>
+                    <div id="v35-info" class="archive-info-panel">
+                        Fokus: Behebung von Bugs, Intelligente Erkennung von veralteten Features.
+                    </div>
+                </div>
+
+                <!-- Weiteres Beispiel -->
+                <div class="archive-wrapper">
+                    <div class="archive-item">
+                        <div>
+                            <span class="archive-version">Version 2.3.2</span>
+                            <span class="archive-date">Dez. 2025</span>
+                        </div>
+                        <div>
+                            <button class="btn-info-small" onclick="toggleDetails('v24-info')">Details</button>
+                            <a href="updates/XY.zip" class="dl-icon">Download</a>
+                        </div>
+                    </div>
+                    <div id="v24-info" class="archive-info-panel">
+                        LKW Programm massiv erweitert, individuelle Einstellungen bei Modulgröße.
+                    </div>
+                </div>
+
+            </div>
+        </details>
+
+    </main>
+
+    <script>
+        function toggleDetails(id) {
+            const el = document.getElementById(id);
+            el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+
+    <footer class="blwe-github-bar">
+        <div class="github-content">
+            <a href="https://github.com" target="_blank" class="github-link">GitHub Repository des Entwicklers von VoltaGo</a>
+        </div>
+        <p class="blwe-footer">&copy; 2026 Balthasar Lörcher. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
 </html>

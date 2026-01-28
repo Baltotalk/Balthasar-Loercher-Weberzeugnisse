@@ -1,0 +1,537 @@
+/* BLWE Design System Variablen */
+:root {
+    --blwe-bg: #f5f5f7;
+    --blwe-blue: #0071e3;
+    --text-main: #1d1d1f;
+    --text-secondary: #86868b;
+    --white: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.08);
+    --hover-shadow: rgba(0, 0, 0, 0.15);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--blwe-bg);
+    color: var(--text-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header & Navigation */
+.blwe-header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 40px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+h1 { font-size: 32px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 20px; }
+
+.blwe-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.blwe-nav a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.blwe-nav a:hover, .blwe-nav a.active { color: var(--blwe-blue); }
+
+/* Content Layout */
+.content-container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+/* Card Basis & Hover Animationen */
+.card, .hero-card {
+    position: relative;
+    background: var(--white);
+    border-radius: 24px;
+    padding: 40px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--card-shadow);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
+    z-index: 1;
+}
+
+.card::before, .hero-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: left 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease;
+    z-index: -1;
+}
+
+.card:hover, .hero-card:hover { transform: scale(1.01); box-shadow: 0 12px 40px var(--hover-shadow); }
+.card:hover::before, .hero-card:hover::before { left: 0; opacity: 0.35; }
+
+/* Hintergrundbilder Pfade */
+.card-voltago::before { background-image: url('images/voltago_bg.jpg'); }
+.card-musik::before { background-image: url('images/musik_bg.jpg'); }
+.card-prog::before { background-image: url('images/code_bg.jpg'); }
+
+.content-wrapper { position: relative; z-index: 2; }
+
+h2 { font-size: 48px; font-weight: 700; margin-bottom: 10px; }
+h3 { font-size: 24px; font-weight: 600; margin-bottom: 10px; }
+p { color: var(--text-secondary); margin-bottom: 20px; max-width: 600px; }
+
+.grid-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+/* Musik-Download-Elemente */
+.song-list { list-style: none; padding: 0; margin-top: 20px; }
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.song-info h4 { margin: 0; font-size: 16px; font-weight: 500; }
+.song-info p { margin: 0; font-size: 13px; color: var(--text-secondary); }
+
+.dl-icon {
+    color: var(--blwe-blue);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 980px;
+    background: rgba(0, 113, 227, 0.08);
+    transition: all 0.2s ease;
+}
+.dl-icon:hover { background: var(--blwe-blue); color: white; }
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background: var(--blwe-blue);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 980px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.blwe-footer { text-align: center; padding: 60px 20px; border-top: 1px solid rgba(0,0,0,0.05); font-size: 12px; color: var(--text-secondary); }
+
+@media (max-width: 768px) { .grid-layout { grid-template-columns: 1fr; } }
+
+
+/* News Widgets Styling */
+.blwe-news-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    overflow-x: auto; /* Ermöglicht Scrollen auf kleinen Bildschirmen */
+    padding: 10px 5px;
+}
+
+.news-widget {
+    flex: 1;
+    min-width: 280px;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 2px 10px var(--card-shadow);
+    transition: transform 0.2s ease;
+}
+
+.news-widget:hover {
+    transform: translateY(-3px);
+}
+
+.news-tag {
+    background: var(--blwe-blue);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+.news-content h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.news-content p {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+    .blwe-news-container {
+        flex-direction: column;
+    }
+}
+
+/* Der Text bleibt fixiert im Hintergrund */
+.blwe-welcome-sticky-wrapper {
+    position: sticky;
+    top: 150px; 
+    z-index: 1;
+    height: 400px; /* Genug Platz nach unten */
+    display: flex;
+    align-items: flex-start;
+    pointer-events: none;
+}
+
+/* Die Container gleiten nun nahtlos darüber */
+.blwe-scroll-content {
+    position: relative;
+    z-index: 10;
+    /* Hier ist das Geheimnis: Gleiche Farbe wie Body, kein Schatten */
+    background-color: var(--blwe-bg); 
+    padding-top: 50px;
+    margin-top: 0;
+    box-shadow: none; /* Entfernt das "Rechteck"-Gefühl */
+}
+
+/* Optional: Ein leichter Verlauf am Anfang des Inhalts, 
+   damit der Text sanft "ausgeblendet" wird */
+.blwe-scroll-content::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, var(--blwe-bg));
+    pointer-events: none;
+}
+
+/* Sektions-Beschriftungen */
+.blwe-section-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--blwe-blue);
+    letter-spacing: 1px;
+    margin: 40px 0 15px 10px;
+}
+
+.label-obsolete {
+    color: var(--text-secondary);
+    margin-top: 60px;
+}
+
+/* Badge für aktive Projekte */
+.project-badge {
+    background: #34c759; /* Apple Success Green */
+    color: white;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Effekt für beendete Projekte (Obsolet) */
+.card-obsolete {
+    filter: grayscale(0.8);
+    opacity: 0.8;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card-obsolete:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.status-tag {
+    font-size: 10px;
+    font-weight: 700;
+    color: #ff3b30; /* Apple Warning Red */
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/* Sekundär-Button für Archiv-Projekte */
+.btn-secondary {
+    display: inline-block;
+    color: var(--text-main);
+    background: #e5e5ea;
+    padding: 10px 20px;
+    border-radius: 980px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #d1d1d6;
+}
+
+/* Einblend-Animation für die Liste */
+.grid-layout .card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.grid-layout .card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Spezieller PS3-Wave Hintergrund nur für Impressum */
+.ps3-bg-active {
+    background: linear-gradient(135deg, #1d1d1f 0%, #002b5c 100%) !important;
+    overflow-x: hidden;
+}
+
+.ps3-bg-active .blwe-header, 
+.ps3-bg-active .blwe-footer {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+}
+
+.ps3-bg-active .blwe-nav a { color: rgba(255,255,255,0.6); }
+.ps3-bg-active .blwe-nav a.active { color: #0071e3; }
+.ps3-bg-active h1, .ps3-bg-active h2, .ps3-bg-active h3 { color: white; }
+
+/* Die Wellen-Elemente */
+.wave-layer {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+    filter: blur(50px);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.ps3-wave {
+    position: absolute;
+    width: 150%; height: 150%;
+    background: radial-gradient(circle, #0071e3 0%, transparent 70%);
+    animation: ps3Move 12s infinite alternate ease-in-out;
+}
+
+.ps3-wave:nth-child(2) {
+    background: radial-gradient(circle, #5e5e5e 0%, transparent 60%);
+    animation-duration: 18s;
+    animation-delay: -4s;
+}
+
+@keyframes ps3Move {
+    from { transform: translate(-10%, -10%) rotate(0deg); }
+    to { transform: translate(10%, 10%) rotate(10deg); }
+}
+
+
+/* VoltaGo Spezial-Elemente */
+.blwe-details {
+    background: var(--white);
+    border-radius: 18px;
+    margin-bottom: 15px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px var(--card-shadow);
+}
+
+.blwe-details summary {
+    font-weight: 600;
+    font-size: 16px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blwe-details summary::after {
+    content: "＋";
+    color: var(--blwe-blue);
+    font-weight: bold;
+}
+
+.blwe-details[open] summary::after { content: "－"; }
+
+.details-content {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Hintergrundeffekte für die Klapp-Bereiche */
+.troubleshooting[open] { background: rgba(255, 59, 48, 0.05); } /* Dezent Rötlich */
+.manual[open] { background: rgba(0, 113, 227, 0.05); } /* Dezent Bläulich */
+
+/* GitHub Bar am unteren Rand */
+.blwe-github-bar {
+    background: #1d1d1f;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.github-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.github-link {
+    background: white;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.github-link:hover { transform: scale(1.05); }
+
+
+/* Dynamischer Hintergrundeffekt für die VoltaGo Hero-Card */
+.blwe-hero-glow {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%) !important;
+    border: 1px solid rgba(0, 113, 227, 0.2) !important;
+    overflow: hidden;
+}
+
+/* Die pulsierende Animation im Hintergrund der Card */
+.blwe-hero-glow::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 113, 227, 0.15) 0%, transparent 60%);
+    animation: glowPulse 8s infinite alternate ease-in-out;
+    z-index: 1;
+}
+
+@keyframes glowPulse {
+    from { transform: translate(-10%, -10%) scale(1); opacity: 0.5; }
+    to { transform: translate(10%, 15%) scale(1.2); opacity: 1; }
+}
+
+/* Archiv-Listen Styling */
+.blwe-archive-details {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    margin-top: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.archive-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.archive-item:last-child { border-bottom: none; }
+
+.archive-version { font-weight: 600; font-size: 14px; }
+.archive-date { font-size: 12px; color: var(--text-secondary); margin-left: 10px; }
+
+
+/* Spezifische Ergänzungen für die Info-Buttons */
+        .btn-secondary-white {
+            display: inline-block;
+            background: var(--white);
+            color: var(--text-main);
+            padding: 12px 24px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 10px;
+            border: 1px solid rgba(0,0,0,0.1);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .btn-secondary-white:hover {
+            background: #f0f0f5;
+            transform: scale(1.02);
+        }
+        .info-panel {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+            animation: fadeIn 0.4s ease;
+        }
+        .archive-info-panel {
+            display: none;
+            padding: 15px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+        .btn-info-small {
+            background: none;
+            border: none;
+            color: var(--blwe-blue);
+            cursor: pointer;
+            font-size: 12px;
+            text-decoration: underline;
+            margin-right: 10px;
+        }
+
+
+/* Hintergrundeffekte beim Öffnen */
+.troubleshooting[open] { background: rgba(255, 59, 48, 0.03); border: 1px solid rgba(255, 59, 48, 0.1); }
+.manual[open] { background: rgba(0, 113, 227, 0.03); border: 1px solid rgba(0, 113, 227, 0.1); }
+
+.details-content {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    animation: fadeIn 0.5s ease;
+}
