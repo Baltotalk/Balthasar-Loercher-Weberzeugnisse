@@ -1,61 +1,77 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="style_legacy.scss">
-  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icon/apple-touch-icon.png">
-  <link rel="manifest" href="icon/site.webmanifest">
-  <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <title>BLWE Nadga</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balthasar Lörcher Weberzeugnisse | NadGa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="nadga-theme">
 
-<body>
-  <div class="titelblock">
-    <h1 class="Hueberschrift">BALTHASAR LÖRCHER WEBERZEUGNISSE</h1>
+    <header class="blwe-header">
+        <h1>NadGa New Adventure Game</h1>
+        <nav class="blwe-nav">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="musik.html">Musik</a></li>
+                <li><a href="programme.html" class="active">Programme</a></li>
+                <li><a href="voltago.html">VoltaGo</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="content-container">
+        
+        <!-- Beschreibung -->
+        <section class="hero-card card-nadga">
+            <div class="content-wrapper">
+                <div class="project-badge fantasy-badge">In Entwicklung</div>
+                <h2>Ein Epos in der Konsole.</h2>
+                <p>NadGa ist ein Open-World-RPG in C#, das die Tiefe klassischer Rollenspiele in die Welt der Kommandozeile bringt.</p>
+                <div class="release-info">Demo-Release geplant für 2026</div>
+            </div>
+        </section>
 
-    <nav>
+        <!-- Features-->
+        <section class="blwe-section-label">Kern-Features</section>
+        <div class="grid-layout">
+            
+            <div class="card fantasy-card">
+                <h3>Open World</h3>
+                <p>Frei begehbare Bereiche in einem düsteren Mittelalter-Setting. Entdecke Städte, Kerker und Ruinen.</p>
+            </div>
 
-      <a href="index.html">Startseite</a>
-      <a href="programme.html">Programme</a>
-      <a href="musik.html">Musik</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="bos.html">B.OS</a>
-      <div class="animation start-home"></div>
-    </nav>
+            <div class="card fantasy-card">
+                <h3>Kampf & Rüstung</h3>
+                <p>Rundenbasiertes Kampfsystem mit taktischer Tiefe und einem komplexen Rüstungsspektrum.</p>
+            </div>
 
-  </div>
-  Herzlich Willkommen auf der Seite von Nadga (New Adventure Game)! Diese Seite wird demnächst designtechnisch an das neue Design angepasst!<br>
-  Weitere Infos zum Spiel sowie eine spielbare Demo erscheinen demnächst ebenfalls an dieser Stelle!<br>
-  Neue Infos: Es sind neue Informationen verfügbar! An der Unterseite wird gearbeitet. 2026 erscheint NadGa!
-  <br><br><b>New Adventure Game</b><br>
-  Die Features<br>
-  Bei diesem Spiel handelt es sich um ein in der Konsole laufendes und ausschließlich in C# geschriebenes textbasiertes Adventure RPG.<br>
-  Das RPG Element wird insbesondere durch die dauerhafte Konsequenzen einiger Entscheidungen des Spielers für den weiteren Spielverlauf integriert.<br>
-  Des Weiteren existiert ein simples Klassensystem mit jeweils anderen Stärken und Schwächen sowie Startvorteilen und ein Itemsystem mit drei unterschiedlichen Itemtypen<br>
-  und einigen verfügbaren Items. Spielentscheidend ist das Leveln unterschiedlicher Parameter, durch Items oder Erfahrung levelbar sind Gesundheit, Ausdauer, Magie und Redekunst sowie Stärke.<br>
-  Das Spiel ist weitestgehend Open World und bietet dem Spieler mit questbedingten Ausnahmen zu fast jedem Zeitpunkt vollen Zugang zur gesamten Spielwelt. Es existieren außerdem Dungeons sowie<br>
-  verschiedene Arten von NPCs, darunter aggressive, passiv-freundliche und passiv-unfreundliche. Das Questsystem erlaubt neben der Verfolgung der Hauptquest auch die Annahme von bis zu zwei gleichzeitig aktiven Nebenquests.
-  <br><br>Die Story<br>
-  Der Spieler erwacht ohne Erinnerung vor den Toren einer großen Stadt in einem mittelalterlich angesiedelten Setting mit Fantasyelementen. Er wird mit mehreren Problemen und Unstimmigkeiten konfrontiert und muss das Land<br>
-  vor einem drohenden Bürgerkrieg bewahren. Außerdem muss der Spieler seine eigene Geschichte wieder entdecken und Schritt für Schritt mithilfe seiner augedeckten Vergangenheit die Zukunft retten. (Details folgen später).<br>
-  <br>Die Steuerung<br>
-  Die Steuerung erfolgt textbasiert über die Konsole. Der Spieler kann von Anfang an immer aus mehreren Gebotenen Optionen die für ihn bevorzugte Wählen, so gibt es beispielsweise in einer Stadt dutzende Auswahlmöglichkeiten sodass<br>
-  der Spieler in seiner Handlungsfreiheit nicht eingeschränkt wird. Der Kampf erfolgt gegnerspezifisch und rundenbasiert. Jede Option die der Spieler tätigt hängt von einigen Parametern ab und beeinflusst entsprechend andere Parameter<br>
-  und somit den weiteren Spielverlauf. Manche Optionen sind je nach Level oder ausgerüsteten Gegenständen nicht vorhanden. Das reicht vom verwehrten Kauf eines Brotes wegen zu wenig Geld oder Redekunst (Sympathie) bis hin zu einer<br>
-  Verwehrung des Eintritts in eine Stadt ohne entsprechendes Dekret.
-  <br><br>Release<br>
-  Das Spiel ist noch in einer frühen Entwicklungsphase, unter anderem das Itemsystem und die Spielwelt sind in reiner Textform schwer zu integrieren wenn das Programm effizient laufen soll und das Spiel intuitiv gesteuert werden soll.<br>
-  Eine Demo wird wahrscheinlich im Laufe des Jahres 2026 hier erscheinen, das fertige Spiel ist aber aus Zeitgründen noch in weiter ferne. Sounddesign und Dialogvertonung soll auch integriert werden.
+            <div class="card fantasy-card">
+                <h3>Klassen-System</h3>
+                <p>Wähle deinen Weg. Ein flexibles Klassensystem bestimmt deine Fähigkeiten und deinen Spielstil.</p>
+            </div>
+
+            <div class="card fantasy-card">
+                <h3>Inventar-Management</h3>
+                <p>Sammle Ressourcen, verwalte deine Ausrüstung und rüste dich für die Gefahren der Wildnis.</p>
+            </div>
+
+        </div>
+
+        <section class="hero-card" style="margin-top: 40px; background: rgba(0,0,0,0.05);">
+            <div class="content-wrapper" style="text-align: center;">
+                <h3>Bereit für das Abenteuer?</h3>
+                <p>Folge der Entwicklung und sei einer der Ersten, die die Welt von NadGa betreten.</p>
+                <a href="programme.html" class="btn-primary">Zurück zu Programme</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="blwe-footer">
+        <p>&copy; 2026 Balthasar Lörcher. Alle Rechte vorbehalten.</p>
+    </footer>
+
 </body>
-
 </html>

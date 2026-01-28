@@ -535,3 +535,50 @@ p { color: var(--text-secondary); margin-bottom: 20px; max-width: 600px; }
     line-height: 1.6;
     animation: fadeIn 0.5s ease;
 }
+
+/* NadGa Fantasy Theme */
+.nadga-theme {
+    background-color: #f0ebe0; /* Pergament-Farbton */
+    background-image: url('https://www.transparenttextures.com'); /* Dezente Textur */
+}
+
+.fantasy-badge {
+    background: #8b4513 !important; /* Sattelbraun */
+    border: 1px solid #d4af37; /* Goldkante */
+    letter-spacing: 2px;
+}
+
+.card-nadga {
+    background: linear-gradient(135deg, #2c1e14 0%, #1a110a 100%) !important;
+    color: #d4af37 !important; /* Goldener Text */
+    border: 2px solid #d4af37;
+}
+
+.card-nadga p {
+    color: #f0ebe0 !important;
+}
+
+.fantasy-card {
+    background: white;
+    border-left: 5px solid #d4af37; /* Goldener Akzentstreifen */
+    transition: all 0.3s ease;
+}
+
+.fantasy-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(139, 69, 19, 0.2);
+}
+
+.release-info {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #d4af37;
+    text-transform: uppercase;
+}
+
+/* Hover-Bild für NadGa */
+.card-nadga::before {
+    background-image: url('images/nadga_bg.jpg'); /* Ein Screenshot der Konsole oder Artwork */
+    opacity: 0.25;
+}
