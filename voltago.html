@@ -27,24 +27,49 @@
         <section class="hero-card blwe-hero-glow">
             <div class="content-wrapper">
                 <div class="project-badge">Aktuelles Release</div>
-                <h2>VoltaGo Version 3 CLI</h2>
+                <h2>VoltaGo Version 3.1 CLI</h2>
                 <p>Intelligente Features und Konsolennavigation. Diverse Anpassungsmöglichkeiten auf Ihre Nutzungsvorlieben zugeschnitten.</p>
                 
                 <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    <a href="" class="btn-primary">Demnächst für Windows und MacOS!</a>
+                    <a href="" class="btn-primary">Am 15. März für Windows!</a>
                     <button class="btn-secondary-white" onclick="toggleDetails('main-info')">Mehr erfahren</button>
                 </div>
 
                 <div id="main-info" class="info-panel">
-                    <strong>Release-Notes Version 3:</strong><br>
+                    <strong>Release-Notes Version 3.1:</strong><br>
                     • Automatisierte Berechnung effizienter Plattenausrichtungen<br>
                     • Automatischer Update-Check via dieser Seite<br>
                     • Optimierte Navigation<br>
 		            • Stellen Sie selbst ein welche Ergebnisse VoltaGo Ihnen anzeigt.<br>
                     • Speichern Sie Ihre Ergebnisse in drei Speicherplätzen ab.<br>
                     • Legacybootmode für Weiternutzung nach Einstellung des Supports.<br>
-                    Gültig bis zum 31.05.26, verwendbar bis zum 31.07.26. LBC ausgeschlossen.<br>
+                    • Absolute Pfadsicherheit hinzigefügt.<br>
+                    • B.OS kompatible Befehle hinzugefügt.<br>
+                    • Entwicklerbefehle hinzugefügt.<br>
+                    • Marge-Programm zur Berechnung von Gewinnmargen eingepflegt.<br>
+                    • Systemsounds hinzugefügt. Die Möglichkeit zur Anpassung besteht.<br>
+                    Gültig bis zum 31.08.26, verwendbar bis zum 31.10.26. Mit LBC unbegrenzt.<br>
 		            Mehr erfahren Sie in den GitHub Release Notes.<br>
+                    VoltaGo ist ein Produkt von BLWE
+                </div>
+            </div>
+        </section>
+        <section class="hero-card blwe-hero-glow">
+            <div class="content-wrapper">
+                <div class="project-badge">In Entwicklung</div>
+                <h2>VoltaGo v4 GUI</h2>
+                <p>Alles was VoltaGo 3 kann intuitiv und schnell. Intelligente Bedienung und einfache Einarbeitung in die grafische Oberfläche.</p>
+                
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <a href="" class="btn-primary">Herbst 2026 für MacOS!</a>
+                    <button class="btn-secondary-white" onclick="toggleDetails('main-info')">Mehr erfahren</button>
+                </div>
+
+                <div id="main-info" class="info-panel">
+                    <strong>Was macht VoltaGo v4?</strong><br>
+                    Um VoltaGo mehr Nutzern zugänglich zu machen und noch intuitiver zu machen wird für MacOS eine Version von VoltaGo entwickelt, welche als GUI alle Features von VoltaGo 3 aufgreift und verbessert.<br>
+                    Insbesondere wird es in einer Schnellansicht möglich sein ohne Einarbeitung sofort noch auf der Baustelle per Drag and Drop ein individuelles Dach mit Modulen zu belegen.<br>
+                    Mehr Infos folgen im Laufe des Jahres 2026!<br>
                     VoltaGo ist ein Produkt von BLWE
                 </div>
             </div>
@@ -54,8 +79,8 @@
     		<div class="welcome-badge">Über das Projekt</div>
     			<h2>Was ist VoltaGo?</h2>
     			<p class="welcome-subtext">
-        VoltaGo ist ein kommandozeilenbasiertes Python Programm welches Ihnen als professioneller Anwender dabei hilft, verschiedene Berechnungen Ihres Arbeitsalltages zuverlässig zu übernehmen. Mit VoltaGo 3 können Sie die Beladung von Lastkraftwagen und die ideale Belegung eines Daches jeder Größe mit Photovoltaikmodulen berechnen. Der Fokus liegt hierbei auf dem PV Programm, an welchem stetig weiterentwickelt wird. VoltaGo ist selbst als Konsolenprogramm einfach und unmissverständlich zu bedienen, es sagt Ihnen immer in verständlicher Sprache welche Informationen es gerade von Ihnen braucht und wie Sie so antworten können, dass VoltaGo Sie versteht.<br>
-        Version 3 ist die mit Abstand ausgereifteste Version, Sie ist dafür designed fehlerfrei und einfach zu funktionieren.
+        VoltaGo ist ein kommandozeilenbasiertes Python Programm welches Ihnen als professioneller Anwender dabei hilft, verschiedene Berechnungen Ihres Arbeitsalltages zuverlässig zu übernehmen. Mit VoltaGo 3 können Sie die ideale Belegung eines Daches jeder Größe mit Photovoltaikmodulen sowie die Beladung von Lastkraftwagen und Gewinnmargen bei individuellen Ein-und Verkaufspreisen berechnen. Der Fokus liegt hierbei auf dem PV Programm, an welchem stetig weiterentwickelt wird. VoltaGo ist selbst als Konsolenprogramm einfach und unmissverständlich zu bedienen, es sagt Ihnen immer in verständlicher Sprache welche Informationen es gerade von Ihnen braucht und wie Sie so antworten können, dass VoltaGo Sie versteht.<br>
+        Version 3.1 ist die mit Abstand ausgereifteste Version, Sie ist dafür designed fehlerfrei und einfach zu funktionieren.
     			</p>
 	</section>
 
@@ -65,8 +90,9 @@
 		<details class="blwe-details manual">
     			<summary>Bedienungsanleitung</summary>
     				<div class="details-content">
-        				<p><strong>Erste Schritte:</strong> Starten Sie die <code>VoltaGo.exe</code>. Beim ersten Start werden Sie aufgefordert, die Lizenzvereinbarung zu akzeptieren und bekommen die Updateinformationen Ihrer Version angezeigt. Sie landen nun in der Haupteingabeshell von VoltaGo. Wo Sie sich im System befinden, sprich welche spezifischen Befehle erkannt werden können, können Sie unten links sehen. In der Hauptshell können Sie mit -list die Befehlsliste abrufen. Geben Sie einfach einen Befehl ein und drücken Sie die ENTER Taste, VoltaGo sagt Ihnen dann was es tun wird.</p>
+        				<p><strong>Erste Schritte Windows:</strong> Starten Sie die <code>VoltaGo.exe</code>. Beim ersten Start werden Sie aufgefordert, die Lizenzvereinbarung zu akzeptieren und bekommen die Updateinformationen Ihrer Version angezeigt. Sie landen nun in der Haupteingabeshell von VoltaGo. Wo Sie sich im System befinden, sprich welche spezifischen Befehle erkannt werden können, können Sie unten links sehen. In der Hauptshell können Sie mit -list die Befehlsliste abrufen. Geben Sie einfach einen Befehl ein und drücken Sie die ENTER Taste, VoltaGo sagt Ihnen dann was es tun wird.</p>
         				<p><strong>Update-Prozess:</strong> Um die neueste Version zu erhalten, nutzen Sie in der App den Befehl <code>-update</code>. VoltaGo verbindet sich mit den BLWE Servern und informiert Sie wenn eine neue Version verfügbar ist, die Sie hier laden können.</p>
+                        <p><strong>Erste Schritte MacOS:</strong> Die Versionen der Serie VoltaGo 3.x werden nicht für MacOS erscheinen. Bitte nutzen Sie stattdessen eine ältere Version oder warten Sie den Release von <code>VoltaGo v4</code>ab.</p>
     				</div>
 		</details>
 
@@ -74,8 +100,9 @@
     			<summary>Troubleshooting / Fehlerbehebung</summary>
     				<div class="details-content">
         				<p><strong>Problem: Programm startet nicht.</strong><br>Stellen Sie sicher, dass die VoltaGo.exe Datei sich im Verzeichnis mit allen benötigten Zusatzdateien (.txt Dateien) befindet. Ohne diese kann VoltaGo nicht starten.</p>
+                        <p><strong>Problem: Programm startet nicht auf MacOS.</strong><br>VoltaGo ist auf MacOS derzeit noch nicht verfügbar. Sie können allerdings eine ältere Version von VoltaGo nutzen, müssen jedoch beachten, dass Sie diese direkt im Terminal starten müssen.</p>
         				<p><strong>Problem: Es wird eine Fehlermeldung bezüglich meiner Internetverbindung angezeigt.</strong><br>Prüfen Sie Ihre Internetverbindung. VoltaGo prüft bei jedem Start und wenn Sie den Updatebefehl ausführen ob eine neue Version verfügbar ist und benötigt dafür eine Verbindung zum Internet. Sind die BLWE Server nicht erreichbar, gibt VoltaGo eine Fehlermeldung aus. Sie können das Programm jedoch ohne Einschränkungen verwenden, haben möglicherweise aber nicht die neuesten Funktionen.</p>
-					<p><strong>Problem: Programm stürzt ab.</strong><br>Sollte das Programm in einem Unterprogramm wie dem PV-Programm abstürzen, haben Sie wahrscheinlich bei der Abfrage nach einer Zahl eine Zahl im falschen Format oder keine gültige Eingabe getätigt. Das Programm kann dies aktuell nicht verarbeiten. Sollte das Programm abgestürzt sein wenn dies nicht der Fall ist kontaktieren Sie bitte den Entwickler und geben Sie einen eventuell angezeigten Fehlercode an. Dies sollte nicht passieren.</p>
+					<p><strong>Problem: Programm stürzt ab.</strong><br>Sollte das Programm in einem Unterprogramm wie dem PV-Programm abstürzen, haben Sie wahrscheinlich bei der Abfrage nach einer Zahl eine Zahl im falschen Format oder keine gültige Eingabe getätigt. Dies kann VoltaGo bis Version 3 nicht verarbeiten. Sollte das Programm abgestürzt sein wenn dies nicht der Fall ist kontaktieren Sie bitte den Entwickler und geben Sie einen eventuell angezeigten Fehlercode an. Dies sollte nicht passieren. Sollte Ihre Version 3.1 oder höher sein darf keinesfalls ein Programmabsturz auftreten, melden SIe dies bitte umgehend.</p>
 				<p><strong>Problem: Programm startet im Legacybootmodus</strong><br>Überprüfen Sie die Einstellung Ihres Systemdatums. Wenn VoltaGo ein Datum zu weit in der Zukunft erkennt sperrt es aus Sicherheitsgründen den Zugang zum Programm. Sollte Ihre Version jedoch älter als ein halbes Jahr sein, so benötigen Sie einen Legacybootcode zum Start des Programms. Diesen bekommen Sie auf dieser Seite. Jedoch sollten Sie ein Update des Programms strengstens in Betrachtung ziehen da der Zugang aufgrund eventuell mittlerweile behobener schwerwiegender Bugs eingeschränkt wurde.</p>
     				</div>
 		</details>
