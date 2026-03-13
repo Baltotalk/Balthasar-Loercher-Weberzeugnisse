@@ -31,25 +31,27 @@
                 <p>Intelligente Features und Konsolennavigation. Diverse Anpassungsmöglichkeiten auf Ihre Nutzungsvorlieben zugeschnitten.</p>
                 
                 <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    <a href="" class="btn-primary">Am 15. März für Windows!</a>
+                    <a href="" class="btn-primary">Morgen für Windows!</a>
                     <button class="btn-secondary-white" onclick="toggleDetails('main-info')">Mehr erfahren</button>
                 </div>
 
                 <div id="main-info" class="info-panel">
-                    <strong>Release-Notes Version 3.1:</strong><br>
+                    <strong>Das ist neu in Version 3.1 CLI:</strong><br>
                     • Automatisierte Berechnung effizienter Plattenausrichtungen<br>
+                    • VoltaGo Hilfezentrum<br>
                     • Automatischer Update-Check via dieser Seite<br>
                     • Optimierte Navigation<br>
 		            • Stellen Sie selbst ein welche Ergebnisse VoltaGo Ihnen anzeigt.<br>
                     • Speichern Sie Ihre Ergebnisse in drei Speicherplätzen ab.<br>
                     • Legacybootmode für Weiternutzung nach Einstellung des Supports.<br>
-                    • Absolute Pfadsicherheit hinzigefügt.<br>
+                    • Absolute Pfadsicherheit hinzugefügt.<br>
                     • B.OS kompatible Befehle hinzugefügt.<br>
                     • Entwicklerbefehle hinzugefügt.<br>
-                    • Marge-Programm zur Berechnung von Gewinnmargen eingepflegt.<br>
-                    • Systemsounds hinzugefügt. Die Möglichkeit zur Anpassung besteht.<br>
+                    • Hohe Sicherheit vor Abstürzen durch Value Errors oder Keyboard Interrupts<br>
+                    • Marge-Programm zur Berechnung von Gewinnmargen<br>
+                    • Akustische Warnungen hinzugefügt<br>
+                    • Möglichkeit zum Zurücksetzen über erweiterte Befehle<br>
                     Gültig bis zum 31.08.26, verwendbar bis zum 31.10.26. Mit LBC unbegrenzt.<br>
-		            Mehr erfahren Sie in den GitHub Release Notes.<br>
                     VoltaGo ist ein Produkt von BLWE
                 </div>
             </div>
@@ -61,7 +63,7 @@
                 <p>Alles was VoltaGo 3 kann intuitiv und schnell. Intelligente Bedienung und einfache Einarbeitung in die grafische Oberfläche.</p>
                 
                 <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    <a href="" class="btn-primary">Herbst 2026 für MacOS!</a>
+                    <a href="" class="btn-primary">bis 2027 für MacOS!</a>
                     <button class="btn-secondary-white" onclick="toggleDetails('main-infov4')">Mehr erfahren</button>
                 </div>
 
@@ -84,6 +86,21 @@
     			</p>
 	</section>
 
+    </section>
+	<!-- Sektion: VoltaGo hilft -->
+	<section class="blwe-welcome-area" style="margin-top: 60px; position: relative; z-index: 2;">
+    		<div class="welcome-badge">VoltaGo Hilfszentrum</div>
+    			<h2>VoltaGo hilft Ihnen</h2>
+    			<p class="welcome-subtext">
+        VoltaGo bietet einen entscheidenden Vorteil: Jeder kann es ohne Einübung sofort und fehlerfrei bedienen, da VoltaGo einfach und strukturiert bedienbar ist.
+        Jedoch kann es dennoch vorkommen, dass man mit der Bedienung einen Moment lang nicht zurecht kommt oder sich andere Fragen auftuen.
+        Für diesen Fall gibt es das in VoltaGo 3.1 CLI neu eingeführte VoltaGo Hilfszentrum. Es ist mit dem Befehl <code>-hlp</code> aufrufbar und bietet Ihnen Hilfe bei vielen Fragen.
+        So erklärt VoltaGo die Bedienung und die Art und weise wie es funktioniert und strukturiert ist, wie die Updates funktionieren, wie bestimmte Fehlerbilder zu erklären sind und noch viel mehr!
+        VoltaGo wirft Sie nicht ins kalte Wasser, es ist für Sie da wenn Sie Hilfe brauchen.
+    			</p>
+	</section>
+
+
 	<!-- Sektion: Dokumentation & Hilfe -->
 	<section class="blwe-section-label">Support & Anleitung</section>
 
@@ -102,8 +119,19 @@
         				<p><strong>Problem: Programm startet nicht.</strong><br>Stellen Sie sicher, dass die VoltaGo.exe Datei sich im Verzeichnis mit allen benötigten Zusatzdateien (.txt Dateien) befindet. Ohne diese kann VoltaGo nicht starten.</p>
                         <p><strong>Problem: Programm startet nicht auf MacOS.</strong><br>VoltaGo ist auf MacOS derzeit noch nicht verfügbar. Sie können allerdings eine ältere Version von VoltaGo nutzen, müssen jedoch beachten, dass Sie diese direkt im Terminal starten müssen.</p>
         				<p><strong>Problem: Es wird eine Fehlermeldung bezüglich meiner Internetverbindung angezeigt.</strong><br>Prüfen Sie Ihre Internetverbindung. VoltaGo prüft bei jedem Start und wenn Sie den Updatebefehl ausführen ob eine neue Version verfügbar ist und benötigt dafür eine Verbindung zum Internet. Sind die BLWE Server nicht erreichbar, gibt VoltaGo eine Fehlermeldung aus. Sie können das Programm jedoch ohne Einschränkungen verwenden, haben möglicherweise aber nicht die neuesten Funktionen.</p>
-					<p><strong>Problem: Programm stürzt ab.</strong><br>Sollte das Programm in einem Unterprogramm wie dem PV-Programm abstürzen, haben Sie wahrscheinlich bei der Abfrage nach einer Zahl eine Zahl im falschen Format oder keine gültige Eingabe getätigt. Dies kann VoltaGo bis Version 3 nicht verarbeiten. Sollte das Programm abgestürzt sein wenn dies nicht der Fall ist kontaktieren Sie bitte den Entwickler und geben Sie einen eventuell angezeigten Fehlercode an. Dies sollte nicht passieren. Sollte Ihre Version 3.1 oder höher sein darf keinesfalls ein Programmabsturz auftreten, melden SIe dies bitte umgehend.</p>
-				<p><strong>Problem: Programm startet im Legacybootmodus</strong><br>Überprüfen Sie die Einstellung Ihres Systemdatums. Wenn VoltaGo ein Datum zu weit in der Zukunft erkennt sperrt es aus Sicherheitsgründen den Zugang zum Programm. Sollte Ihre Version jedoch älter als ein halbes Jahr sein, so benötigen Sie einen Legacybootcode zum Start des Programms. Diesen bekommen Sie auf dieser Seite. Jedoch sollten Sie ein Update des Programms strengstens in Betrachtung ziehen da der Zugang aufgrund eventuell mittlerweile behobener schwerwiegender Bugs eingeschränkt wurde.</p>
+					    <p><strong>Problem: Programm stürzt ab.</strong><br>Sollte das Programm in einem Unterprogramm wie dem PV-Programm abstürzen, haben Sie wahrscheinlich bei der Abfrage nach einer Zahl eine Zahl im falschen Format oder keine gültige Eingabe getätigt. Dies kann VoltaGo bis Version 3 nicht verarbeiten. Sollte das Programm abgestürzt sein wenn dies nicht der Fall ist kontaktieren Sie bitte den Entwickler und geben Sie einen eventuell angezeigten Fehlercode an. Dies sollte nicht passieren. Sollte Ihre Version 3.1 oder höher sein darf keinesfalls ein Programmabsturz auftreten, melden SIe dies bitte umgehend.</p>
+				        <p><strong>Problem: Programm startet im Legacybootmodus</strong><br>Überprüfen Sie die Einstellung Ihres Systemdatums. Wenn VoltaGo ein Datum zu weit in der Zukunft erkennt sperrt es aus Sicherheitsgründen den Zugang zum Programm. Sollte Ihre Version jedoch älter als ein halbes Jahr sein, so benötigen Sie einen Legacybootcode zum Start des Programms. Diesen bekommen Sie auf dieser Seite. Jedoch sollten Sie ein Update des Programms strengstens in Betrachtung ziehen da der Zugang aufgrund eventuell mittlerweile behobener schwerwiegender Bugs eingeschränkt wurde.</p>
+    				</div>
+		</details>
+
+        <details class="blwe-details troubleshooting">
+    			<summary>Bekannte Probleme (in Arbeit)</summary>
+    				<div class="details-content">
+        				<p><strong>PV Programm</strong><br>Aktuell ist das Rechnen mit reinen Flächenwerten nicht empfohlen da es keine Option gibt ein eigenes Seitenverhältnis auszuwählen.</p>
+                        <p><strong>PV Programm</strong><br>VoltaGo Version 3 und 3.1 CLI stürzen ab, sobald man versucht mit den vordefinierten Modulgrößen zu rechnen. Dies liegt daran dass diese Option noch nicht an die automatische Ausrichtungsberechnung angepasst wurde.</p>
+        				<p><strong>PV Programm</strong><br>Aktuell berechnet die Sperrflächenrechnung starr basierend auf der reinen absoluten Fläche der Module im Vergleich zum Dach. Es fehlt eine Möglichkeit der Sperrfläche eine Position zuzuweisen.</p>
+					    <p><strong>Legacybootmode</strong><br>Der Legacybootmode ist aktuell noch nicht gegen Keyboard Interrupts geschützt.</p>
+				        <p><strong>Updatefunktion</strong><br>Der Start des Programms dauert durch die Versionsprüfung insbesondere bei einer langsamen Internetverbindung sehr lange, der Timeout liegt bei 5 Sekunden. Für einen schnellen Start muss der Timeout beim Start verkürzt werden und dafür beim manuellen Prüfen verlängert.</p>
     				</div>
 		</details>
 
